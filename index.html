@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Usage</title>
+<style>
+  :root {
+    --bg: #1a1a1a;
+    --card: #262626;
+    --card-2: #2f2f2f;
+    --text: #f5f5f5;
+    --muted: #8f8f8f;
+    --accent: #6b8fd6;
+    --grid-empty: #333333;
+    --radius: 14px;
+    --font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: transparent; font-family: var(--font); }
+  .ccw {
+    width: 100%; max-width: 640px; margin: 0 auto;
+    background: var(--bg); color: var(--text);
+    border-radius: var(--radius); padding: 18px;
+    border: 1px solid #303030;
+  }
+  .ccw-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .ccw-tabs, .ccw-ranges { display: flex; gap: 4px; }
+  .ccw-btn {
+    background: transparent; border: none; color: var(--muted);
+    font: inherit; font-size: 14px; font-weight: 600;
+    padding: 7px 13px; border-radius: 9px; cursor: pointer;
+  }
+  .ccw-btn.active { background: var(--card-2); color: var(--text); }
+  .ccw-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+  .ccw-stat { background: var(--card); border-radius: 10px; padding: 13px 14px; }
+  .ccw-stat .label { color: var(--muted); font-size: 13px; font-weight: 500; margin-bottom: 6px; }
+  .ccw-stat .value { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+  .ccw-heat { display: grid; grid-auto-flow: column; grid-template-rows: repeat(7, 1fr); gap: 4px; margin-bottom: 12px; }
+  .ccw-cell { width: 100%; aspect-ratio: 1; border-radius: 4px; background: var(--grid-empty); }
+  .ccw-foot { color: var(--muted); font-size: 14px; }
+  .ccw-models { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+  .ccw-model-row { background: var(--card); border-radius: 10px; padding: 12px 14px; }
+  .ccw-model-head { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 8px; }
+  .ccw-model-head .nm { font-weight: 700; }
+  .ccw-model-head .ct { color: var(--muted); }
+  .ccw-bar { height: 7px; border-radius: 4px; background: var(--card-2); overflow: hidden; }
+  .ccw-bar > div { height: 100%; background: var(--accent); border-radius: 4px; }
+  .hidden { display: none; }
+  @media (max-width: 520px) {
+    .ccw-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="ccw" id="ccw">
+  <div class="ccw-top">
+    <div class="ccw-tabs" id="ccw-tabs">
+      <button class="ccw-btn active" data-view="overview">Overview</button>
+      <button class="ccw-btn" data-view="models">Models</button>
+    </div>
+    <div class="ccw-ranges" id="ccw-ranges">
+      <button class="ccw-btn active" data-range="all">All</button>
+      <button class="ccw-btn" data-range="d30">30d</button>
+      <button class="ccw-btn" data-range="d7">7d</button>
+    </div>
+  </div>
+  <div id="ccw-overview">
+    <div class="ccw-grid" id="ccw-stats"></div>
+    <div class="ccw-heat" id="ccw-heat"></div>
+    <div class="ccw-foot" id="ccw-foot"></div>
+  </div>
+  <div id="ccw-models-view" class="hidden">
+    <div class="ccw-models" id="ccw-models"></div>
+  </div>
+</div>
+<script>
+const DATA = {"generated_at":"2026-06-25T12:32:35.794790-05:00","all":{"sessions":520,"messages":21363,"tokens":14727559,"active_days":29,"current_streak":4,"longest_streak":6,"peak_hour":10,"favorite_model":"Sonnet 4.6","models":[{"id":"claude-sonnet-4-6","name":"Sonnet 4.6","messages":12229,"tokens":12949661},{"id":"claude-haiku-4-5-20251001","name":"Haiku 4.5","messages":790,"tokens":1540368},{"id":"claude-opus-4-8","name":"Opus 4.8","messages":156,"tokens":237530},{"id":"<synthetic>","name":"Synthetic","messages":13,"tokens":0}],"daily":[{"date":"2026-05-08","messages":93,"tokens":47391},{"date":"2026-05-11","messages":24,"tokens":28546},{"date":"2026-05-21","messages":53,"tokens":112153},{"date":"2026-05-22","messages":313,"tokens":823164},{"date":"2026-05-23","messages":38,"tokens":36748},{"date":"2026-05-26","messages":374,"tokens":312599},{"date":"2026-05-27","messages":141,"tokens":102429},{"date":"2026-05-28","messages":82,"tokens":28963},{"date":"2026-05-29","messages":23,"tokens":12049},{"date":"2026-06-01","messages":360,"tokens":411660},{"date":"2026-06-02","messages":571,"tokens":550827},{"date":"2026-06-03","messages":848,"tokens":779128},{"date":"2026-06-04","messages":627,"tokens":244128},{"date":"2026-06-05","messages":473,"tokens":161920},{"date":"2026-06-08","messages":2486,"tokens":1116503},{"date":"2026-06-09","messages":1298,"tokens":576909},{"date":"2026-06-10","messages":110,"tokens":25836},{"date":"2026-06-11","messages":1852,"tokens":857766},{"date":"2026-06-12","messages":1555,"tokens":690920},{"date":"2026-06-15","messages":179,"tokens":50597},{"date":"2026-06-16","messages":559,"tokens":460647},{"date":"2026-06-17","messages":1240,"tokens":614063},{"date":"2026-06-18","messages":1693,"tokens":955287},{"date":"2026-06-19","messages":2819,"tokens":2104188},{"date":"2026-06-20","messages":33,"tokens":3494},{"date":"2026-06-22","messages":999,"tokens":1056907},{"date":"2026-06-23","messages":633,"tokens":906206},{"date":"2026-06-24","messages":1064,"tokens":1196424},{"date":"2026-06-25","messages":823,"tokens":460107}],"moby_dick_multiple":54.5},"d30":{"sessions":516,"messages":20690,"tokens":13577951,"active_days":24,"current_streak":4,"longest_streak":6,"peak_hour":10,"favorite_model":"Sonnet 4.6","models":[{"id":"claude-sonnet-4-6","name":"Sonnet 4.6","messages":11799,"tokens":11800053},{"id":"claude-haiku-4-5-20251001","name":"Haiku 4.5","messages":790,"tokens":1540368},{"id":"claude-opus-4-8","name":"Opus 4.8","messages":156,"tokens":237530},{"id":"<synthetic>","name":"Synthetic","messages":12,"tokens":0}],"daily":[{"date":"2026-05-26","messages":222,"tokens":210993},{"date":"2026-05-27","messages":141,"tokens":102429},{"date":"2026-05-28","messages":82,"tokens":28963},{"date":"2026-05-29","messages":23,"tokens":12049},{"date":"2026-06-01","messages":360,"tokens":411660},{"date":"2026-06-02","messages":571,"tokens":550827},{"date":"2026-06-03","messages":848,"tokens":779128},{"date":"2026-06-04","messages":627,"tokens":244128},{"date":"2026-06-05","messages":473,"tokens":161920},{"date":"2026-06-08","messages":2486,"tokens":1116503},{"date":"2026-06-09","messages":1298,"tokens":576909},{"date":"2026-06-10","messages":110,"tokens":25836},{"date":"2026-06-11","messages":1852,"tokens":857766},{"date":"2026-06-12","messages":1555,"tokens":690920},{"date":"2026-06-15","messages":179,"tokens":50597},{"date":"2026-06-16","messages":559,"tokens":460647},{"date":"2026-06-17","messages":1240,"tokens":614063},{"date":"2026-06-18","messages":1693,"tokens":955287},{"date":"2026-06-19","messages":2819,"tokens":2104188},{"date":"2026-06-20","messages":33,"tokens":3494},{"date":"2026-06-22","messages":999,"tokens":1056907},{"date":"2026-06-23","messages":633,"tokens":906206},{"date":"2026-06-24","messages":1064,"tokens":1196424},{"date":"2026-06-25","messages":823,"tokens":460107}],"moby_dick_multiple":50.3},"d7":{"sessions":125,"messages":7399,"tokens":6403085,"active_days":7,"current_streak":4,"longest_streak":4,"peak_hour":13,"favorite_model":"Sonnet 4.6","models":[{"id":"claude-sonnet-4-6","name":"Sonnet 4.6","messages":4233,"tokens":5777573},{"id":"claude-haiku-4-5-20251001","name":"Haiku 4.5","messages":160,"tokens":387982},{"id":"claude-opus-4-8","name":"Opus 4.8","messages":156,"tokens":237530},{"id":"<synthetic>","name":"Synthetic","messages":3,"tokens":0}],"daily":[{"date":"2026-06-18","messages":1028,"tokens":675759},{"date":"2026-06-19","messages":2819,"tokens":2104188},{"date":"2026-06-20","messages":33,"tokens":3494},{"date":"2026-06-22","messages":999,"tokens":1056907},{"date":"2026-06-23","messages":633,"tokens":906206},{"date":"2026-06-24","messages":1064,"tokens":1196424},{"date":"2026-06-25","messages":823,"tokens":460107}],"moby_dick_multiple":23.7}};
+let RANGE = "all", VIEW = "overview";
+
+function fmtInt(n){ return n.toLocaleString("en-US"); }
+function fmtTokens(n){
+  if (n >= 1e9) return (n/1e9).toFixed(1)+"B";
+  if (n >= 1e6) return (n/1e6).toFixed(1)+"M";
+  if (n >= 1e3) return (n/1e3).toFixed(1)+"K";
+  return ""+n;
+}
+function fmtHour(h){
+  if (h === null || h === undefined) return "—";
+  const ap = h < 12 ? "AM" : "PM";
+  let hh = h % 12; if (hh === 0) hh = 12;
+  return hh + " " + ap;
+}
+
+function renderStats(d){
+  const cells = [
+    ["Sessions", fmtInt(d.sessions)],
+    ["Messages", fmtInt(d.messages)],
+    ["Total tokens", fmtTokens(d.tokens)],
+    ["Active days", fmtInt(d.active_days)],
+    ["Current streak", d.current_streak + "d"],
+    ["Longest streak", d.longest_streak + "d"],
+    ["Peak hour", fmtHour(d.peak_hour)],
+    ["Favorite model", d.favorite_model || "—"],
+  ];
+  document.getElementById("ccw-stats").innerHTML = cells.map(
+    ([l,v]) => `<div class="ccw-stat"><div class="label">${l}</div><div class="value">${v}</div></div>`
+  ).join("");
+}
+
+function renderHeat(d){
+  // Build a contiguous day grid ending today, 7 rows (weeks as columns).
+  const byDate = {};
+  let max = 1;
+  d.daily.forEach(x => { byDate[x.date] = x.messages; if (x.messages > max) max = x.messages; });
+  const WEEKS = RANGE === "d7" ? 2 : (RANGE === "d30" ? 6 : 22);
+  const today = new Date();
+  const cells = [];
+  const totalDays = WEEKS * 7;
+  // Align so the last column ends on this week.
+  const start = new Date(today);
+  start.setDate(today.getDate() - (totalDays - 1));
+  for (let i = 0; i < totalDays; i++){
+    const dt = new Date(start);
+    dt.setDate(start.getDate() + i);
+    const key = dt.toISOString().slice(0,10);
+    const v = byDate[key] || 0;
+    const intensity = v === 0 ? 0 : 0.25 + 0.75 * Math.min(1, v / max);
+    cells.push(intensity);
+  }
+  document.getElementById("ccw-heat").innerHTML = cells.map(intensity => {
+    if (intensity === 0) return `<div class="ccw-cell"></div>`;
+    return `<div class="ccw-cell" style="background: rgba(107,143,214,${intensity.toFixed(2)})"></div>`;
+  }).join("");
+}
+
+function renderFoot(d){
+  const mult = d.moby_dick_multiple;
+  document.getElementById("ccw-foot").textContent =
+    `You've used ~${mult}× more tokens than Moby-Dick.`;
+}
+
+function renderModels(d){
+  const maxTok = Math.max(1, ...d.models.map(m => m.tokens));
+  document.getElementById("ccw-models").innerHTML = d.models.map(m => {
+    const pct = (100 * m.tokens / maxTok).toFixed(1);
+    return `<div class="ccw-model-row">
+      <div class="ccw-model-head">
+        <span class="nm">${m.name}</span>
+        <span class="ct">${fmtInt(m.messages)} msgs · ${fmtTokens(m.tokens)} tok</span>
+      </div>
+      <div class="ccw-bar"><div style="width:${pct}%"></div></div>
+    </div>`;
+  }).join("") || `<div class="ccw-foot">No model data in this range.</div>`;
+}
+
+function render(){
+  const d = DATA[RANGE];
+  document.getElementById("ccw-overview").classList.toggle("hidden", VIEW !== "overview");
+  document.getElementById("ccw-models-view").classList.toggle("hidden", VIEW !== "models");
+  if (VIEW === "overview"){ renderStats(d); renderHeat(d); renderFoot(d); }
+  else { renderModels(d); }
+}
+
+document.getElementById("ccw-tabs").addEventListener("click", e => {
+  const b = e.target.closest("[data-view]"); if (!b) return;
+  VIEW = b.dataset.view;
+  document.querySelectorAll("#ccw-tabs .ccw-btn").forEach(x => x.classList.toggle("active", x === b));
+  render();
+});
+document.getElementById("ccw-ranges").addEventListener("click", e => {
+  const b = e.target.closest("[data-range]"); if (!b) return;
+  RANGE = b.dataset.range;
+  document.querySelectorAll("#ccw-ranges .ccw-btn").forEach(x => x.classList.toggle("active", x === b));
+  render();
+});
+render();
+</script>
+</body>
+</html>

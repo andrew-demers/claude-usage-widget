@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T09:05:05.782959-05:00",
+  "generated_at": "2026-07-13T09:12:25.258596-05:00",
   "all": {
     "sessions": 545,
     "messages": 27479,
@@ -181,10 +181,10 @@
     "moby_dick_multiple": 69.5
   },
   "d30": {
-    "sessions": 475,
-    "messages": 24508,
-    "tokens": 17249849,
-    "active_days": 20,
+    "sessions": 455,
+    "messages": 23083,
+    "tokens": 16587750,
+    "active_days": 19,
     "current_streak": 0,
     "longest_streak": 6,
     "peak_hour": 11,
@@ -193,8 +193,8 @@
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 9294,
-        "tokens": 9554225
+        "messages": 8468,
+        "tokens": 8964262
       },
       {
         "id": "claude-sonnet-5",
@@ -211,8 +211,8 @@
       {
         "id": "claude-haiku-4-5-20251001",
         "name": "Haiku 4.5",
-        "messages": 374,
-        "tokens": 768898
+        "messages": 340,
+        "tokens": 696762
       },
       {
         "id": "<synthetic>",
@@ -222,11 +222,6 @@
       }
     ],
     "daily": [
-      {
-        "date": "2026-06-12",
-        "messages": 1425,
-        "tokens": 662099
-      },
       {
         "date": "2026-06-15",
         "messages": 179,
@@ -323,12 +318,12 @@
         "tokens": 1431334
       }
     ],
-    "moby_dick_multiple": 63.9
+    "moby_dick_multiple": 61.4
   },
   "d7": {
     "sessions": 197,
-    "messages": 8163,
-    "tokens": 5647136,
+    "messages": 8096,
+    "tokens": 5589805,
     "active_days": 5,
     "current_streak": 0,
     "longest_streak": 5,
@@ -338,8 +333,8 @@
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 4294,
-        "tokens": 4692243
+        "messages": 4252,
+        "tokens": 4634912
       },
       {
         "id": "claude-sonnet-4-6",
@@ -369,8 +364,8 @@
     "daily": [
       {
         "date": "2026-07-06",
-        "messages": 708,
-        "tokens": 412667
+        "messages": 641,
+        "tokens": 355336
       },
       {
         "date": "2026-07-07",
@@ -393,6 +388,6 @@
         "tokens": 1431334
       }
     ],
-    "moby_dick_multiple": 20.9
+    "moby_dick_multiple": 20.7
   }
 }

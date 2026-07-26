@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-25T09:03:00.396289-05:00",
+  "generated_at": "2026-07-26T09:14:37.270781-05:00",
   "all": {
     "sessions": 317,
     "messages": 25727,
     "tokens": 17084741,
     "active_days": 25,
-    "current_streak": 5,
+    "current_streak": 0,
     "longest_streak": 5,
     "peak_hour": 11,
     "favorite_model": "sonnet-5",
@@ -171,11 +171,11 @@
     "moby_dick_multiple": 63.3
   },
   "d30": {
-    "sessions": 310,
-    "messages": 24542,
-    "tokens": 15840934,
-    "active_days": 20,
-    "current_streak": 5,
+    "sessions": 294,
+    "messages": 22604,
+    "tokens": 14299464,
+    "active_days": 19,
+    "current_streak": 0,
     "longest_streak": 5,
     "peak_hour": 11,
     "favorite_model": "sonnet-5",
@@ -189,14 +189,14 @@
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 4033,
-        "tokens": 3267589
+        "messages": 3176,
+        "tokens": 2375953
       },
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 1411,
-        "tokens": 2330628
+        "messages": 1048,
+        "tokens": 1680794
       },
       {
         "id": "claude-haiku-4-5-20251001",
@@ -207,20 +207,15 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 24,
+        "messages": 23,
         "tokens": 0
       }
     ],
     "daily": [
       {
-        "date": "2026-06-25",
-        "messages": 1862,
-        "tokens": 1480194
-      },
-      {
         "date": "2026-06-26",
-        "messages": 1109,
-        "tokens": 601554
+        "messages": 1033,
+        "tokens": 540278
       },
       {
         "date": "2026-06-29",
@@ -313,14 +308,14 @@
         "tokens": 408484
       }
     ],
-    "moby_dick_multiple": 58.7
+    "moby_dick_multiple": 53.0
   },
   "d7": {
     "sessions": 40,
     "messages": 6882,
     "tokens": 4363694,
     "active_days": 5,
-    "current_streak": 5,
+    "current_streak": 0,
     "longest_streak": 5,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",

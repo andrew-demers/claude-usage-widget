@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-06T09:01:41.524867-05:00",
+  "generated_at": "2026-08-07T09:01:46.151266-05:00",
   "all": {
-    "sessions": 340,
-    "messages": 29803,
-    "tokens": 18737744,
-    "active_days": 27,
-    "current_streak": 3,
+    "sessions": 336,
+    "messages": 29254,
+    "tokens": 18321133,
+    "active_days": 28,
+    "current_streak": 4,
     "longest_streak": 5,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",
@@ -13,14 +13,14 @@
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 14249,
-        "tokens": 13856598
+        "messages": 13955,
+        "tokens": 13572962
       },
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 3081,
-        "tokens": 2746173
+        "messages": 3022,
+        "tokens": 2613198
       },
       {
         "id": "claude-opus-4-8",
@@ -37,7 +37,7 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 27,
+        "messages": 29,
         "tokens": 0
       },
       {
@@ -55,8 +55,8 @@
       },
       {
         "date": "2026-06-29",
-        "messages": 360,
-        "tokens": 215496
+        "messages": 32,
+        "tokens": 10644
       },
       {
         "date": "2026-06-30",
@@ -65,13 +65,13 @@
       },
       {
         "date": "2026-07-01",
-        "messages": 291,
-        "tokens": 332108
+        "messages": 195,
+        "tokens": 274062
       },
       {
         "date": "2026-07-06",
-        "messages": 708,
-        "tokens": 412667
+        "messages": 331,
+        "tokens": 187077
       },
       {
         "date": "2026-07-07",
@@ -182,16 +182,21 @@
         "date": "2026-08-05",
         "messages": 172,
         "tokens": 94622
+      },
+      {
+        "date": "2026-08-06",
+        "messages": 252,
+        "tokens": 71877
       }
     ],
-    "moby_dick_multiple": 69.4
+    "moby_dick_multiple": 67.9
   },
   "d30": {
-    "sessions": 324,
-    "messages": 27597,
-    "tokens": 17370831,
+    "sessions": 308,
+    "messages": 25404,
+    "tokens": 15583541,
     "active_days": 22,
-    "current_streak": 3,
+    "current_streak": 4,
     "longest_streak": 5,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",
@@ -199,20 +204,20 @@
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 13656,
-        "tokens": 13123603
+        "messages": 12314,
+        "tokens": 11605998
       },
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 2483,
-        "tokens": 2366812
+        "messages": 2517,
+        "tokens": 2388023
       },
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 1087,
-        "tokens": 1793241
+        "messages": 981,
+        "tokens": 1502345
       },
       {
         "id": "claude-haiku-4-5-20251001",
@@ -223,7 +228,7 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 27,
+        "messages": 28,
         "tokens": 0
       },
       {
@@ -235,14 +240,9 @@
     ],
     "daily": [
       {
-        "date": "2026-07-07",
-        "messages": 1895,
-        "tokens": 1420658
-      },
-      {
         "date": "2026-07-08",
-        "messages": 2437,
-        "tokens": 1499767
+        "messages": 1887,
+        "tokens": 1061258
       },
       {
         "date": "2026-07-09",
@@ -343,37 +343,42 @@
         "date": "2026-08-05",
         "messages": 172,
         "tokens": 94622
+      },
+      {
+        "date": "2026-08-06",
+        "messages": 252,
+        "tokens": 71877
       }
     ],
-    "moby_dick_multiple": 64.3
+    "moby_dick_multiple": 57.7
   },
   "d7": {
-    "sessions": 32,
+    "sessions": 29,
     "messages": 5908,
-    "tokens": 3505456,
+    "tokens": 3209169,
     "active_days": 5,
-    "current_streak": 3,
-    "longest_streak": 3,
+    "current_streak": 4,
+    "longest_streak": 4,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",
     "models": [
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 2836,
-        "tokens": 2487038
+        "messages": 2822,
+        "tokens": 2476860
       },
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 733,
-        "tokens": 730395
+        "messages": 781,
+        "tokens": 639467
       },
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 69,
-        "tokens": 224288
+        "messages": 22,
+        "tokens": 29107
       },
       {
         "id": "claude-opus-5",
@@ -384,16 +389,11 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 4,
+        "messages": 6,
         "tokens": 0
       }
     ],
     "daily": [
-      {
-        "date": "2026-07-30",
-        "messages": 252,
-        "tokens": 368164
-      },
       {
         "date": "2026-07-31",
         "messages": 211,
@@ -413,8 +413,13 @@
         "date": "2026-08-05",
         "messages": 172,
         "tokens": 94622
+      },
+      {
+        "date": "2026-08-06",
+        "messages": 252,
+        "tokens": 71877
       }
     ],
-    "moby_dick_multiple": 13.0
+    "moby_dick_multiple": 11.9
   }
 }

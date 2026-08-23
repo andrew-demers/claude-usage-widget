@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-22T09:00:06.438472-05:00",
+  "generated_at": "2026-08-23T09:00:06.830383-05:00",
   "all": {
     "sessions": 159,
     "messages": 26067,
     "tokens": 16738291,
     "active_days": 36,
-    "current_streak": 6,
+    "current_streak": 0,
     "longest_streak": 6,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",
@@ -226,11 +226,11 @@
     "moby_dick_multiple": 62.0
   },
   "d30": {
-    "sessions": 137,
-    "messages": 22797,
-    "tokens": 14881223,
-    "active_days": 23,
-    "current_streak": 6,
+    "sessions": 128,
+    "messages": 20647,
+    "tokens": 13209433,
+    "active_days": 22,
+    "current_streak": 0,
     "longest_streak": 6,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",
@@ -238,20 +238,20 @@
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 11268,
-        "tokens": 11550593
+        "messages": 10358,
+        "tokens": 10510917
       },
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 2078,
-        "tokens": 1995109
+        "messages": 1985,
+        "tokens": 1918711
       },
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 828,
-        "tokens": 1174425
+        "messages": 418,
+        "tokens": 618709
       },
       {
         "id": "claude-opus-5",
@@ -262,16 +262,11 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 14,
+        "messages": 12,
         "tokens": 0
       }
     ],
     "daily": [
-      {
-        "date": "2026-07-23",
-        "messages": 2150,
-        "tokens": 1671790
-      },
       {
         "date": "2026-07-24",
         "messages": 635,
@@ -383,14 +378,14 @@
         "tokens": 301151
       }
     ],
-    "moby_dick_multiple": 55.1
+    "moby_dick_multiple": 48.9
   },
   "d7": {
     "sessions": 27,
     "messages": 4349,
     "tokens": 2811915,
     "active_days": 6,
-    "current_streak": 6,
+    "current_streak": 0,
     "longest_streak": 6,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",

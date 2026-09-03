@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-02T09:00:05.798534-05:00",
+  "generated_at": "2026-09-03T09:00:05.989845-05:00",
   "all": {
-    "sessions": 157,
-    "messages": 27044,
-    "tokens": 17340566,
+    "sessions": 153,
+    "messages": 24763,
+    "tokens": 15972938,
     "active_days": 43,
     "current_streak": 1,
     "longest_streak": 6,
@@ -13,8 +13,8 @@
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 12991,
-        "tokens": 13326267
+        "messages": 11547,
+        "tokens": 11934226
       },
       {
         "id": "claude-sonnet-4-6",
@@ -25,8 +25,8 @@
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 950,
-        "tokens": 1351653
+        "messages": 978,
+        "tokens": 1376066
       },
       {
         "id": "claude-opus-5",
@@ -139,8 +139,8 @@
       },
       {
         "date": "2026-08-03",
-        "messages": 3353,
-        "tokens": 1933968
+        "messages": 920,
+        "tokens": 459820
       },
       {
         "date": "2026-08-04",
@@ -254,17 +254,17 @@
       },
       {
         "date": "2026-09-02",
-        "messages": 6,
-        "tokens": 2154
+        "messages": 158,
+        "tokens": 108674
       }
     ],
-    "moby_dick_multiple": 64.2
+    "moby_dick_multiple": 59.2
   },
   "d30": {
-    "sessions": 129,
-    "messages": 23282,
-    "tokens": 14624019,
-    "active_days": 24,
+    "sessions": 121,
+    "messages": 19983,
+    "tokens": 12718417,
+    "active_days": 23,
     "current_streak": 1,
     "longest_streak": 6,
     "peak_hour": 9,
@@ -273,20 +273,20 @@
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 12704,
-        "tokens": 12886975
+        "messages": 10947,
+        "tokens": 11249295
       },
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 1341,
-        "tokens": 1221274
+        "messages": 1032,
+        "tokens": 958046
       },
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 328,
-        "tokens": 354674
+        "messages": 334,
+        "tokens": 349980
       },
       {
         "id": "claude-opus-5",
@@ -303,14 +303,9 @@
     ],
     "daily": [
       {
-        "date": "2026-08-03",
-        "messages": 3345,
-        "tokens": 1933452
-      },
-      {
         "date": "2026-08-04",
-        "messages": 1920,
-        "tokens": 1047460
+        "messages": 1814,
+        "tokens": 968790
       },
       {
         "date": "2026-08-05",
@@ -419,33 +414,33 @@
       },
       {
         "date": "2026-09-02",
-        "messages": 6,
-        "tokens": 2154
+        "messages": 158,
+        "tokens": 108674
       }
     ],
-    "moby_dick_multiple": 54.2
+    "moby_dick_multiple": 47.1
   },
   "d7": {
-    "sessions": 23,
-    "messages": 3696,
-    "tokens": 1935581,
-    "active_days": 6,
+    "sessions": 18,
+    "messages": 2396,
+    "tokens": 1154436,
+    "active_days": 5,
     "current_streak": 1,
-    "longest_streak": 3,
+    "longest_streak": 2,
     "peak_hour": 10,
     "favorite_model": "sonnet-5",
     "models": [
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 2256,
-        "tokens": 1892890
+        "messages": 1421,
+        "tokens": 1087332
       },
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 40,
-        "tokens": 42691
+        "messages": 68,
+        "tokens": 67104
       },
       {
         "id": "<synthetic>",
@@ -455,11 +450,6 @@
       }
     ],
     "daily": [
-      {
-        "date": "2026-08-26",
-        "messages": 1452,
-        "tokens": 887665
-      },
       {
         "date": "2026-08-27",
         "messages": 986,
@@ -482,10 +472,10 @@
       },
       {
         "date": "2026-09-02",
-        "messages": 6,
-        "tokens": 2154
+        "messages": 158,
+        "tokens": 108674
       }
     ],
-    "moby_dick_multiple": 7.2
+    "moby_dick_multiple": 4.3
   }
 }

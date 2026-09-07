@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T09:00:06.741851-05:00",
+  "generated_at": "2026-09-07T09:00:06.177332-05:00",
   "all": {
     "sessions": 139,
     "messages": 22427,
@@ -261,10 +261,10 @@
     "moby_dick_multiple": 54.1
   },
   "d30": {
-    "sessions": 107,
-    "messages": 17845,
-    "tokens": 11651517,
-    "active_days": 21,
+    "sessions": 106,
+    "messages": 17688,
+    "tokens": 11553148,
+    "active_days": 20,
     "current_streak": 0,
     "longest_streak": 6,
     "peak_hour": 12,
@@ -279,8 +279,8 @@
       {
         "id": "claude-sonnet-4-6",
         "name": "Sonnet 4.6",
-        "messages": 681,
-        "tokens": 643049
+        "messages": 586,
+        "tokens": 544680
       },
       {
         "id": "claude-opus-4-8",
@@ -297,16 +297,11 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 8,
+        "messages": 7,
         "tokens": 0
       }
     ],
     "daily": [
-      {
-        "date": "2026-08-07",
-        "messages": 157,
-        "tokens": 98369
-      },
       {
         "date": "2026-08-10",
         "messages": 259,
@@ -408,23 +403,23 @@
         "tokens": 68389
       }
     ],
-    "moby_dick_multiple": 43.2
+    "moby_dick_multiple": 42.8
   },
   "d7": {
-    "sessions": 15,
-    "messages": 1383,
-    "tokens": 761565,
-    "active_days": 4,
+    "sessions": 14,
+    "messages": 1372,
+    "tokens": 759801,
+    "active_days": 3,
     "current_streak": 0,
-    "longest_streak": 2,
+    "longest_streak": 1,
     "peak_hour": 16,
     "favorite_model": "sonnet-5",
     "models": [
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 810,
-        "tokens": 687324
+        "messages": 803,
+        "tokens": 685560
       },
       {
         "id": "claude-opus-4-8",
@@ -434,11 +429,6 @@
       }
     ],
     "daily": [
-      {
-        "date": "2026-08-30",
-        "messages": 11,
-        "tokens": 1764
-      },
       {
         "date": "2026-08-31",
         "messages": 1114,

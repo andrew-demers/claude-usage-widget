@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-28T09:00:10.293934-05:00",
+  "generated_at": "2026-09-29T09:00:10.935167-05:00",
   "all": {
-    "sessions": 4342,
-    "messages": 52128,
-    "tokens": 27080537,
+    "sessions": 5787,
+    "messages": 55677,
+    "tokens": 27503429,
     "active_days": 58,
-    "current_streak": 14,
-    "longest_streak": 14,
+    "current_streak": 15,
+    "longest_streak": 15,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",
     "models": [
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 22805,
-        "tokens": 22251556
+        "messages": 23240,
+        "tokens": 22674448
       },
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 4140,
+        "messages": 5582,
         "tokens": 0
       },
       {
@@ -203,14 +203,9 @@
         "tokens": 11441
       },
       {
-        "date": "2026-08-26",
-        "messages": 157,
-        "tokens": 76430
-      },
-      {
         "date": "2026-08-27",
-        "messages": 986,
-        "tokens": 415436
+        "messages": 845,
+        "tokens": 374163
       },
       {
         "date": "2026-08-28",
@@ -329,32 +324,37 @@
       },
       {
         "date": "2026-09-28",
-        "messages": 1225,
-        "tokens": 51562
+        "messages": 3988,
+        "tokens": 592157
+      },
+      {
+        "date": "2026-09-29",
+        "messages": 1084,
+        "tokens": 0
       }
     ],
-    "moby_dick_multiple": 100.3
+    "moby_dick_multiple": 101.9
   },
   "d30": {
-    "sessions": 4294,
-    "messages": 44892,
-    "tokens": 22732335,
-    "active_days": 23,
-    "current_streak": 14,
-    "longest_streak": 14,
+    "sessions": 5741,
+    "messages": 48739,
+    "tokens": 23272930,
+    "active_days": 24,
+    "current_streak": 15,
+    "longest_streak": 15,
     "peak_hour": 12,
     "favorite_model": "sonnet-5",
     "models": [
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 22054,
-        "tokens": 21745958
+        "messages": 22670,
+        "tokens": 22286553
       },
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 4128,
+        "messages": 5570,
         "tokens": 0
       },
       {
@@ -483,16 +483,21 @@
       },
       {
         "date": "2026-09-28",
-        "messages": 1225,
-        "tokens": 51562
+        "messages": 3988,
+        "tokens": 592157
+      },
+      {
+        "date": "2026-09-29",
+        "messages": 1084,
+        "tokens": 0
       }
     ],
-    "moby_dick_multiple": 84.2
+    "moby_dick_multiple": 86.2
   },
   "d7": {
-    "sessions": 4195,
-    "messages": 21440,
-    "tokens": 9907320,
+    "sessions": 5629,
+    "messages": 22883,
+    "tokens": 9129782,
     "active_days": 8,
     "current_streak": 8,
     "longest_streak": 8,
@@ -502,32 +507,27 @@
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 7776,
-        "tokens": 9680468
+        "messages": 6909,
+        "tokens": 8903564
       },
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 4128,
+        "messages": 5570,
         "tokens": 0
       },
       {
         "id": "claude-opus-4-8",
         "name": "Opus 4.8",
-        "messages": 222,
-        "tokens": 226852
+        "messages": 220,
+        "tokens": 226218
       }
     ],
     "daily": [
       {
-        "date": "2026-09-21",
-        "messages": 2180,
-        "tokens": 1152485
-      },
-      {
         "date": "2026-09-22",
-        "messages": 3658,
-        "tokens": 3612551
+        "messages": 3434,
+        "tokens": 3446903
       },
       {
         "date": "2026-09-23",
@@ -556,10 +556,15 @@
       },
       {
         "date": "2026-09-28",
-        "messages": 1225,
-        "tokens": 51562
+        "messages": 3988,
+        "tokens": 592157
+      },
+      {
+        "date": "2026-09-29",
+        "messages": 1084,
+        "tokens": 0
       }
     ],
-    "moby_dick_multiple": 36.7
+    "moby_dick_multiple": 33.8
   }
 }

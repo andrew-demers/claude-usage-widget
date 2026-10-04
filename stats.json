@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-03T09:00:10.232837-05:00",
+  "generated_at": "2026-10-04T09:00:15.419506-05:00",
   "all": {
-    "sessions": 11062,
-    "messages": 68299,
-    "tokens": 29259428,
-    "active_days": 61,
-    "current_streak": 19,
-    "longest_streak": 19,
+    "sessions": 12503,
+    "messages": 71141,
+    "tokens": 29217824,
+    "active_days": 62,
+    "current_streak": 20,
+    "longest_streak": 20,
     "peak_hour": 9,
     "favorite_model": "sonnet-5",
     "models": [
       {
         "id": "claude-sonnet-5",
         "name": "sonnet-5",
-        "messages": 23188,
-        "tokens": 22710763
+        "messages": 23119,
+        "tokens": 22632676
       },
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 10834,
+        "messages": 12275,
         "tokens": 0
       },
       {
@@ -37,8 +37,8 @@
       {
         "id": "claude-sonnet-5-5",
         "name": "sonnet-5-5",
-        "messages": 1314,
-        "tokens": 1691111
+        "messages": 1359,
+        "tokens": 1727594
       },
       {
         "id": "claude-opus-5",
@@ -220,8 +220,8 @@
       },
       {
         "date": "2026-08-31",
-        "messages": 821,
-        "tokens": 424566
+        "messages": 712,
+        "tokens": 346479
       },
       {
         "date": "2026-09-02",
@@ -350,19 +350,24 @@
       },
       {
         "date": "2026-10-03",
-        "messages": 1080,
+        "messages": 2949,
+        "tokens": 36483
+      },
+      {
+        "date": "2026-10-04",
+        "messages": 1082,
         "tokens": 0
       }
     ],
-    "moby_dick_multiple": 108.4
+    "moby_dick_multiple": 108.2
   },
   "d30": {
-    "sessions": 11011,
-    "messages": 61298,
-    "tokens": 24883584,
-    "active_days": 25,
-    "current_streak": 19,
-    "longest_streak": 19,
+    "sessions": 12453,
+    "messages": 64249,
+    "tokens": 24920067,
+    "active_days": 26,
+    "current_streak": 20,
+    "longest_streak": 20,
     "peak_hour": 12,
     "favorite_model": "sonnet-5",
     "models": [
@@ -375,14 +380,14 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 10823,
+        "messages": 12264,
         "tokens": 0
       },
       {
         "id": "claude-sonnet-5-5",
         "name": "sonnet-5-5",
-        "messages": 1314,
-        "tokens": 1691111
+        "messages": 1359,
+        "tokens": 1727594
       },
       {
         "id": "claude-opus-4-8",
@@ -520,16 +525,21 @@
       },
       {
         "date": "2026-10-03",
-        "messages": 1080,
+        "messages": 2949,
+        "tokens": 36483
+      },
+      {
+        "date": "2026-10-04",
+        "messages": 1082,
         "tokens": 0
       }
     ],
-    "moby_dick_multiple": 92.2
+    "moby_dick_multiple": 92.3
   },
   "d7": {
-    "sessions": 9471,
-    "messages": 23306,
-    "tokens": 2895987,
+    "sessions": 9616,
+    "messages": 23663,
+    "tokens": 2932470,
     "active_days": 8,
     "current_streak": 8,
     "longest_streak": 8,
@@ -539,7 +549,7 @@
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 9433,
+        "messages": 9577,
         "tokens": 0
       },
       {
@@ -551,8 +561,8 @@
       {
         "id": "claude-sonnet-5-5",
         "name": "sonnet-5-5",
-        "messages": 1314,
-        "tokens": 1691111
+        "messages": 1359,
+        "tokens": 1727594
       },
       {
         "id": "claude-opus-4-8",
@@ -563,13 +573,8 @@
     ],
     "daily": [
       {
-        "date": "2026-09-26",
-        "messages": 1640,
-        "tokens": 0
-      },
-      {
         "date": "2026-09-27",
-        "messages": 2752,
+        "messages": 1798,
         "tokens": 0
       },
       {
@@ -599,10 +604,15 @@
       },
       {
         "date": "2026-10-03",
-        "messages": 1080,
+        "messages": 2949,
+        "tokens": 36483
+      },
+      {
+        "date": "2026-10-04",
+        "messages": 1082,
         "tokens": 0
       }
     ],
-    "moby_dick_multiple": 10.7
+    "moby_dick_multiple": 10.9
   }
 }

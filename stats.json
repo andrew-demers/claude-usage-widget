@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-31T09:00:30.296139-05:00",
+  "generated_at": "2026-11-01T09:00:33.164737-06:00",
   "all": {
     "sessions": 32010,
     "messages": 81049,
     "tokens": 10265765,
     "active_days": 70,
-    "current_streak": 33,
+    "current_streak": 0,
     "longest_streak": 33,
     "peak_hour": 9,
     "favorite_model": "Synthetic",
@@ -402,26 +402,26 @@
     "moby_dick_multiple": 38.0
   },
   "d30": {
-    "sessions": 31031,
-    "messages": 70765,
-    "tokens": 5243192,
-    "active_days": 30,
-    "current_streak": 30,
-    "longest_streak": 30,
+    "sessions": 29660,
+    "messages": 67036,
+    "tokens": 4352547,
+    "active_days": 29,
+    "current_streak": 0,
+    "longest_streak": 29,
     "peak_hour": 11,
     "favorite_model": "Synthetic",
     "models": [
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 30911,
+        "messages": 29549,
         "tokens": 0
       },
       {
         "id": "claude-sonnet-5-5",
         "name": "sonnet-5-5",
-        "messages": 4592,
-        "tokens": 4612048
+        "messages": 3966,
+        "tokens": 3721403
       },
       {
         "id": "claude-opus-5-5",
@@ -438,14 +438,9 @@
     ],
     "daily": [
       {
-        "date": "2026-10-01",
-        "messages": 2470,
-        "tokens": 844201
-      },
-      {
         "date": "2026-10-02",
-        "messages": 3261,
-        "tokens": 340544
+        "messages": 2002,
+        "tokens": 294100
       },
       {
         "date": "2026-10-03",
@@ -588,22 +583,22 @@
         "tokens": 44471
       }
     ],
-    "moby_dick_multiple": 19.4
+    "moby_dick_multiple": 16.1
   },
   "d7": {
-    "sessions": 6864,
-    "messages": 14863,
+    "sessions": 5469,
+    "messages": 12073,
     "tokens": 401920,
-    "active_days": 7,
-    "current_streak": 7,
-    "longest_streak": 7,
-    "peak_hour": 12,
+    "active_days": 6,
+    "current_streak": 0,
+    "longest_streak": 6,
+    "peak_hour": 10,
     "favorite_model": "Synthetic",
     "models": [
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 6848,
+        "messages": 5453,
         "tokens": 0
       },
       {
@@ -621,13 +616,8 @@
     ],
     "daily": [
       {
-        "date": "2026-10-24",
-        "messages": 1588,
-        "tokens": 0
-      },
-      {
         "date": "2026-10-25",
-        "messages": 2722,
+        "messages": 1520,
         "tokens": 0
       },
       {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T10:06:14.872502-06:00",
+  "generated_at": "2026-11-16T09:00:21.973756-06:00",
   "all": {
     "sessions": 16761,
     "messages": 44974,
@@ -381,19 +381,19 @@
     "moby_dick_multiple": 25.8
   },
   "d30": {
-    "sessions": 14778,
-    "messages": 33969,
+    "sessions": 14102,
+    "messages": 32617,
     "tokens": 2400008,
-    "active_days": 23,
+    "active_days": 22,
     "current_streak": 0,
-    "longest_streak": 15,
+    "longest_streak": 14,
     "peak_hour": 11,
     "favorite_model": "Synthetic",
     "models": [
       {
         "id": "<synthetic>",
         "name": "Synthetic",
-        "messages": 14731,
+        "messages": 14055,
         "tokens": 0
       },
       {
@@ -411,13 +411,8 @@
     ],
     "daily": [
       {
-        "date": "2026-10-16",
-        "messages": 208,
-        "tokens": 0
-      },
-      {
         "date": "2026-10-17",
-        "messages": 1616,
+        "messages": 472,
         "tokens": 0
       },
       {
@@ -529,8 +524,8 @@
     "moby_dick_multiple": 8.9
   },
   "d7": {
-    "sessions": 15,
-    "messages": 844,
+    "sessions": 14,
+    "messages": 842,
     "tokens": 506010,
     "active_days": 4,
     "current_streak": 0,
@@ -543,18 +538,12 @@
         "name": "sonnet-5-5",
         "messages": 493,
         "tokens": 506010
-      },
-      {
-        "id": "<synthetic>",
-        "name": "Synthetic",
-        "messages": 1,
-        "tokens": 0
       }
     ],
     "daily": [
       {
         "date": "2026-11-09",
-        "messages": 81,
+        "messages": 79,
         "tokens": 57648
       },
       {
